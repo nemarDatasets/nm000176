@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000176-blue)](https://doi.org/10.82901/nemar.nm000176)
+
 # BigP3BCI Study K — 9x8 adaptive/checkerboard, 2 sessions (5 healthy subjects)
 
 BigP3BCI Study K — 9x8 adaptive/checkerboard, 2 sessions (5 healthy subjects).
