@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BigP3BCI Study K — 9x8 adaptive/checkerboard, 2 sessions (5 healthy subjects)",
-  "description": "BigP3BCI Study K is a derivative EEG dataset containing P300 brain-computer interface recordings from 5 healthy subjects across 2 sessions using a 9x8 adaptive/checkerboard visual stimulus paradigm. The dataset comprises 16-channel EEG data sampled at 256 Hz with target and non-target event classifications, designed for P300-based speller applications. This dataset is part of the larger BigP3BCI project, the largest public P300 BCI dataset containing recordings from approximately 267 subjects across 20 studies.",
-  "methods_description": "EEG data were acquired using a g.USBamp amplifier (g.tec) with 16 channels arranged in a standard 10-20 montage at a sampling rate of 256 Hz with 60 Hz line frequency filtering. Subjects performed a P300 speller task using a 9x8 character grid with adaptive/checkerboard stimulus presentation. Each session included target and non-target visual stimuli with a trial interval of 0-1.0 seconds. HED 8.4.0 event annotations were applied to classify sensory events as target or non-target visual presentations.",
+  "description": "This dataset comprises EEG recordings from 5 healthy subjects performing a P300-based brain-computer interface (BCI) speller task using a 9x8 adaptive/checkerboard stimulus paradigm across 2 sessions. The data were acquired at 256 Hz using 16 channels with a g.USBamp amplifier and represent a derivative subset of the BigP3BCI study, the largest public P300 BCI dataset containing recordings from approximately 267 subjects across 20 studies. This subset is optimized for benchmarking and developing BCI algorithms for visual perception and character selection tasks.",
+  "methods_description": "EEG data were acquired at a sampling rate of 256 Hz using 16 channels arranged in a standard 10-20 montage with a g.USBamp (g.tec) amplifier. The experimental paradigm employed a P300-based speller task with a 9x8 adaptive/checkerboard stimulus presentation. Subjects completed 2 sessions, with each trial spanning 1.0 second. Target and non-target visual stimuli were presented, and online feedback was provided during the BCI application in a laboratory environment.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -22,7 +22,10 @@
   },
   "keywords": [
     {
-      "term": "P300"
+      "term": "E1A-Associated p300 Protein",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D050881"
     },
     {
       "term": "EEG"
@@ -31,16 +34,16 @@
       "term": "brain-computer interface"
     },
     {
-      "term": "event-related potential"
+      "term": "visual evoked potential"
     },
     {
       "term": "speller paradigm"
     },
     {
-      "term": "adaptive paradigm"
-    },
-    {
-      "term": "checkerboard stimulus"
+      "term": "Event-Related Potentials, P300",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
     }
   ],
   "related_identifiers": [
@@ -76,7 +79,7 @@
     "eeg"
   ],
   "sizes": [
-    "393.2 MB (180 files)"
+    "826.2 MB (260 files)"
   ],
   "formats": [
     ".bdf",
@@ -88,5 +91,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "f91124531e958e067445db4dd0e4ee035cba6ea953285c9ad9a0018f6bb27249"
+  "source_hash": "9a8c65575b334fcab9fc2813190efb58723c03ee61b8d5233f21def27a924313"
 }
