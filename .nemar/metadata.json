@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "BigP3BCI Study K — 9x8 adaptive/checkerboard, 2 sessions (5 healthy subjects)",
-  "description": "This dataset is Study K of the bigP3BCI collection, a large open P300-based brain-computer interface speller resource. It contains 16-channel EEG recorded at 256 Hz from 5 healthy participants across two sessions, using a 9x8 character grid with adaptive and checkerboard stimulus paradigms. Target and non-target events are annotated with HED tags, and the data are reformatted in BIDS form for machine-learning benchmarking.",
-  "methods_description": "EEG was recorded with a g.USBamp amplifier (g.tec) using 16 channels in a standard 10-20 montage at 256 Hz, with 60 Hz line frequency. Participants performed a P300 speller task with online feedback in a laboratory setting. Events were labeled as Target or NonTarget within 1 s epochs, and data were organized for calibration-then-test evaluation.",
+  "description": "A subset (Study K) of the bigP3BCI collection, a large public P300-based brain-computer interface speller dataset. It contains 16-channel EEG recorded with a g.USBamp at 256 Hz from 5 healthy participants across 2 sessions. Participants used a 9x8 character grid with adaptive and checkerboard stimulus presentation, and target and non-target events are annotated with HED tags.",
+  "methods_description": "EEG was recorded from 16 channels (standard 10-20 montage) with a g.tec g.USBamp at 256 Hz in a laboratory setting. Participants performed a P300 speller task on a 9x8 grid with online feedback, using a calibration-then-test scheme. Target and NonTarget events were epoched over 0-1.0 s.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -28,7 +28,10 @@
       "term": "P300"
     },
     {
-      "term": "brain-computer interface"
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
       "term": "speller"
@@ -80,10 +83,11 @@
     ".edf",
     ".html",
     ".json",
+    ".jsonl",
     ".md",
     ".tsv",
     ".yaml",
     ".yml"
   ],
-  "source_hash": "5d42b10ca1b70b097573a6f839ba9ab5ef04900f18e4d5ee0db052c9078b164e"
+  "source_hash": "ce48be1a588daa6299023ea607e0d1ff06f272b01d1412e28d3e0627376d2df0"
 }
